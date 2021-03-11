@@ -1,0 +1,127 @@
+/* this is where all of your CSS styles go */
+.background {
+    height: 600px;
+    width: 500px;
+    background-color: beige;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+@keyframes blue_move {
+    0% { top: 0; }
+    100% { top: 300px; }
+}
+.bluedot {
+    height: 400px;
+    width: 400px;
+    background-color: teal;
+    opacity: 0.7;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 15px;
+    animation: blue_move 3s alternate infinite;
+}
+@keyframes green_move {
+    50% {top: 0; left: 60px;}
+    0%, 100% { top: 0; left: 15px; }
+}
+.greendot {
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    opacity: 0.7;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 150px;
+    animation: green_move 3s alternate infinite;
+}
+@keyframes yellow_move {
+    0% { top: 0; }
+    100% { top: -150px; }
+}
+.yellowdot {
+    height: 400px;
+    width: 400px;
+    background-color: gold;
+    opacity: 0.7;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 300px;
+    animation: yellow_move 1s alternate infinite;
+}
+
+.topline {
+    height: 2px;
+    width: 500px;
+    margin-top: 70px;
+    background-color: black;
+    position: absolute;
+}
+
+.middleline {
+    height: 2px;
+    width: 500px;
+    margin-top: 160px;
+    background-color: black;
+    position: absolute;
+}
+
+
+.bottomline {
+    height: 2px;
+    width: 500px;
+    margin-top: 210px;
+    background-color: black;
+    position: absolute;
+}
+
+
+.toptext {
+    font-family: "Avenir Next Condensed", serif;
+    font-size: 30px;
+    margin-left: 150px;
+    margin-top: 25px;
+    position: absolute;
+}
+
+.titletop {
+    font-family: "Avenir Next Condensed", serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 150px;
+    margin-top: 75px;
+    position: absolute;
+}
+.titlebottom {
+    font-family: "Avenir Next Condensed", serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 150px;
+    margin-top: 110px;
+    position: absolute;
+}
+@keyframes spin {
+    100% {transform: rotate(1turn); }
+}
+.author {
+    font-family: "Avenir Next Condensed", serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 150px;
+    margin-top: 170px;
+    position: absolute;
+    animation: spin 1s linear infinite;
+    animation-play-state: paused;
+
+}
+.author:hover {
+    animation-play-state: running;
+}
+
+
+
